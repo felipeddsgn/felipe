@@ -1,0 +1,366 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      article,
+      aside,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      nav,
+      section {
+        display: block;
+      }
+
+      body {
+        margin: 0;
+        text-align: left;
+      }
+
+      button,
+      [type='button'],
+      [type='reset'],
+      [type='submit'] {
+        -webkit-appearance: button;
+        appearance: button;
+      }
+
+      button::-moz-focus-inner,
+      [type='button']::-moz-focus-inner,
+      [type='reset']::-moz-focus-inner,
+      [type='submit']::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      .hide-delayed {
+        display: none !important;
+      }
+    </style>
+    <link rel="preconnect" href="//static-public.pages.hotmart.com">
+  <style>.ls-page { display: flex; flex-direction: column; align-items: center; }.ls-page-ls-09b3c1cf-f07a-4fef-9466-a9bc0f3b1a72 { padding: 0px 0px 0px 0px; }.ls-section { display: flex; flex-direction: column; align-items: center; box-sizing: border-box; width: 100%; }.ls-section-ls-cfd5ed4f-10a8-44a8-817a-7eb62f061abc { background: #76FF4B; padding: 0px 0px 0px 0px; }.ls-row { display: flex; box-sizing: border-box; width: 100%; max-width: 1200px; }.ls-row-ls-16d9da20-5f3d-4df8-8855-a7ac980bc6c9 { padding: 0px 0px 0px 0px; flex-direction: row; } @media screen and (max-width: 1023px) { .ls-row-ls-16d9da20-5f3d-4df8-8855-a7ac980bc6c9 { flex-direction: column; } } @media screen and (max-width: 833px) { .ls-row-ls-16d9da20-5f3d-4df8-8855-a7ac980bc6c9 { flex-direction: column; } }.ls-column-ls-86153985-8429-479b-986f-797e0955dffa { display: flex; box-sizing: border-box; flex: 12; padding: 88px 0px 340px 0px; flex-direction: column; justify-content: flex-start; align-items: center; } @media screen and (max-width: 833px) { .ls-column-ls-86153985-8429-479b-986f-797e0955dffa { padding: 32px 0px 100px 0px; } }.ls-group-host-ls-3244ac05-ecec-4d59-af95-85ec147d2dc7 { width: 100%; max-width: 759px; display: inline-flex; } .ls-group-ls-3244ac05-ecec-4d59-af95-85ec147d2dc7 { overflow: hidden; display: flex; flex-wrap: wrap; box-sizing: border-box; width: 100%; background: #191C1F; padding: 10px 0px 50px 0px; margin: 10px 0px 10px 0px; border-radius: 12px 12px 12px 12px; flex-direction: column; justify-content: center; align-items: center; } @media screen and (max-width: 833px) { .ls-group-host-ls-3244ac05-ecec-4d59-af95-85ec147d2dc7 { max-width: 334px; } .ls-group-ls-3244ac05-ecec-4d59-af95-85ec147d2dc7 { padding: 10px 0px 32px 0px; } }.ls-image-host-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc { width: 100%; display: inline-flex; max-width: 1200px; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc { width: 100%; display: inline-flex; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc a { width: 100%; display: flex; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc_img { border: none; padding: 0; width: 100%; height: 133px; margin: 0px 0px 0px 0px; overflow: hidden; border-style: none; border-color: #5981e3; border-radius: 4px 4px 4px 4px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; object-fit: cover; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgdesktop { display: inline-flex; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgtablet { display: none; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgmobile { display: none; } @media screen and (max-width: 1023px) { .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgdesktop { display: none; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgtablet { display: inline-flex; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgmobile { display: none; } } @media screen and (max-width: 833px) { .ls-image-host-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc { max-width: 334px; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimg { height: 79px; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgdesktop { display: none; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgtablet { display: none; } .ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgmobile { display: inline-flex; } }.ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f { display: inline-block; word-break: break-word; color: #191C1F; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f h1, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f h2, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f h3, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f p, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f li { line-height: 1.5; overflow: hidden; margin: 0; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f { font-size: 28px; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f h1, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f h2, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f h3, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f p, .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f li { font-size: inherit; } .ls-text-host-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f { width: 100%; display: inline-flex; max-width: 628px; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f { display: inline-block; width: 100%; padding: 32px 0px 39px 0px; text-align: center; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f > * { white-space: pre-wrap; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fdesktop { display: inline; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3ftablet { display: none; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fmobile { display: none; } @media screen and (max-width: 1023px) { .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fdesktop { display: none; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3ftablet { display: inline; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fmobile { display: none; } } @media screen and (max-width: 833px) { .ls-text-host-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f { max-width: 298px; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f { padding: 10px 0px 020px 0px; font-size: 18px; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fdesktop { display: none; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3ftablet { display: none; } .ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fmobile { display: inline; } }.ls-klicksend-form { align-items: center; justify-content: center; width: 100%; overflow: auto; }.ls-klicksend-form-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89 { width: 100%; display: inline-flex; max-width: 75%; } .ls-klicksend-form-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89 { display: inline-flex; flex-direction: column; height: auto; margin: 0px 0px 0px 0px; padding: 0px 16px 16px 16px; } @media screen and (max-width: 833px) { .ls-klicksend-form-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89 { max-width: 334px; } }.ls-inputlabel { margin-bottom: 8px; outline: none; } .ls-inputcontainer { display: flex; align-items: center; cursor: text; width: 100%; } .ls-inputinput { width: 100%; height: 100%; background: transparent; border: none; padding: 0; }.ls-input-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email { display: inline-flex; width: 100%; max-width: 100%; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email { margin: 8px 0px 8px 0px; width: 100%; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emaillabel { display: none; color: #191C1F; font-size: 16px; font-family: Open Sans, sans-serif; font-weight: normal; font-style: unset; text-decoration: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput-container { background: #FFFFFF; padding: 8px 16px 8px 16px; height: 60px; border-style: solid; border-color: #C9CED4; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-radius: 4px 4px 4px 4px; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput-container:focus-within { border-color: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput { font-family: Open Sans, sans-serif; font-size: 18px; color: #191C1F; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput:focus { outline: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput::placeholder { color: #191C1F; } @media screen and (max-width: 1023px) { .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emaillabel { font-weight: normal; font-style: unset; } } @media screen and (max-width: 833px) { .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emaillabel { font-weight: normal; font-style: unset; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput { font-size: 16px; } }.ls-input-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name { display: inline-flex; width: 100%; max-width: 100%; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name { margin: 8px 0px 8px 0px; width: 100%; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_namelabel { display: none; color: #191C1F; font-size: 16px; font-family: Open Sans, sans-serif; font-weight: normal; font-style: unset; text-decoration: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput-container { background: #FFFFFF; padding: 8px 16px 8px 16px; height: 60px; border-style: solid; border-color: #C9CED4; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-radius: 4px 4px 4px 4px; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput-container:focus-within { border-color: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput { font-family: Open Sans, sans-serif; font-size: 18px; color: #191C1F; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput:focus { outline: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput::placeholder { color: #191C1F; } @media screen and (max-width: 1023px) { .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_namelabel { font-weight: normal; font-style: unset; } } @media screen and (max-width: 833px) { .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_namelabel { font-weight: normal; font-style: unset; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput { font-size: 16px; } }.ls-input-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdpr { display: inline-flex; width: 100%; max-width: 100%; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdpr { margin: 8px 0px 8px 0px; width: 100%; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprlabel { display: none; color: #191C1F; font-size: 16px; font-family: Open Sans, sans-serif; font-weight: normal; font-style: unset; text-decoration: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprinput-container { background: #FFFFFF; padding: 8px 16px 8px 16px; height: 60px; border-style: solid; border-color: #C9CED4; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-radius: 4px 4px 4px 4px; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprinput-container:focus-within { border-color: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprinput { font-family: Open Sans, sans-serif; font-size: 18px; color: #191C1F; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprinput:focus { outline: none; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprinput::placeholder { color: #191C1F; } @media screen and (max-width: 1023px) { .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprlabel { font-weight: normal; font-style: unset; } } @media screen and (max-width: 833px) { .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprlabel { font-weight: normal; font-style: unset; } .ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-gdprinput { font-size: 16px; } }.ls-checkbox-host { width: 100%; display: flex; } .ls-checkbox { width: 100%; display: flex; align-items: center; cursor: pointer; } .ls-checkboxinput { margin: 0px 8px 0px 0px; }.ls-checkbox-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox { max-width: 100%; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox { user-select: none; position: relative; margin: 20px 0px 20px 0px; padding: 0px 0px 0px 132px; font-family: Open Sans, sans-serif; font-size: 16px; color: #FFFFFF; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckbox { position: absolute; inset: 0; opacity: 0; z-index: -100; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckboxbox { box-sizing: border-box; flex: none; display: flex; justify-content: center; align-items: center; border: 1px solid black; border-radius: 2px; background-color: white; width: 16px; height: 16px; margin-right: 8px; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckboxbox i { display: none; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckbox:checked ~ .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckboxbox { background-color: #FFFFFF; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckbox:checked ~ .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckboxbox i { display: inline-flex; } @media screen and (max-width: 833px) { .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox { font-size: 14px; padding: 0px 0px 0px 030px; margin: 10px 0px 20px 0px; } .ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckboxbox { width: 14px; height: 14px; } }.ls-icon-host { display: inline-flex; } .ls-icon { display: flex; justify-content: center; align-items: center; }.ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon { margin: 0px 0px 0px 0px; background: none; border-style: none; border-color: #EF4E23; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-radius: 4px 4px 4px 4px; width: 12px; height: 12px; font-size: calc(12px - 0px); color: #000000; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.desktop { display: flex; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.tablet { display: none; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.mobile { display: none; } @media screen and (max-width: 1023px) { .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.desktop { display: none; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.tablet { display: flex; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.mobile { display: none; } } @media screen and (max-width: 833px) { .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon { font-size: calc(10px - 0px); width: 10px; height: 10px; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.desktop { display: none; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.tablet { display: none; } .ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon.mobile { display: flex; } }.ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text { display: inline-block; word-break: break-word; color: #191C1F; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text h1, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text h2, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text h3, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text p, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text li { line-height: 1.5; overflow: hidden; margin: 0; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text { font-size: 14px; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text h1, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text h2, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text h3, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text p, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text li { font-size: inherit; } .ls-text-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text { width: 100%; display: inline-flex; max-width: 100%; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text { display: inline-block; width: 100%; padding: 10px 0px 10px 0px; text-align: center; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text > * { white-space: pre-wrap; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textdesktop { display: inline; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-texttablet { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textmobile { display: none; } @media screen and (max-width: 1023px) { .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textdesktop { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-texttablet { display: inline; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textmobile { display: none; } } @media screen and (max-width: 833px) { .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text { font-size: 12px; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textdesktop { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-texttablet { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textmobile { display: inline; } }.ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link { display: inline-block; word-break: break-word; color: #191C1F; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link h1, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link h2, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link h3, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link p, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link li { line-height: 1.5; overflow: hidden; margin: 0; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link { font-size: 16px; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link h1, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link h2, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link h3, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link p, .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link li { font-size: inherit; } .ls-text-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link { width: 100%; display: inline-flex; max-width: 100%; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link { display: inline-block; width: 100%; padding: 0px 0px 0px 0px; text-align: center; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link > * { white-space: pre-wrap; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkdesktop { display: inline; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linktablet { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkmobile { display: none; } @media screen and (max-width: 1023px) { .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkdesktop { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linktablet { display: inline; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkmobile { display: none; } } @media screen and (max-width: 833px) { .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link { font-size: 14px; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkdesktop { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linktablet { display: none; } .ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link_mobile { display: inline; } }.ls-button-host { width: 100%; display: inline-flex; } .ls-button { display: flex; text-align: center; outline: none; cursor: pointer; align-items: center; justify-content: center; line-height: normal; gap: 8px; }.ls-button-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button { width: 100%; max-width: 100%; } .ls-button-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button { width: 100%; flex-direction: row-reverse; background: #68FF5A; color: #191C1F !important; font-size: 20px; margin: 10px 0px 0px 0px; padding: 16px 32px 19px 32px; border-style: none; border-color: #EF4E23; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-radius: 8px 8px 8px 8px; font-family: Open Sans, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; }</style><title>LiPESET</title><link rel="shortcut icon" href="https://editor.pages.hotmart.com/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"><script type="text/javascript">window.hotmartPageProcessingVersion=2</script><script type="text/javascript">if (location.protocol !== "https:") location.protocol = "https:"</script>
+        <script async="">
+          window.addEventListener('pageLoaded', function () {
+            /*! Lazy Load 2.0.0-rc.2 - MIT license - Copyright 2007-2019 Mika Tuupola */
+!function(t,e){"object"==typeof exports?module.exports=e(t):"function"==typeof define&&define.amd?define([],e):t.LazyLoad=e(t)}("undefined"!=typeof global?global:this.window||this.global,function(t){"use strict";function e(t,e){this.settings=s(r,e||{}),this.images=t||document.querySelectorAll(this.settings.selector),this.observer=null,this.init()}"function"==typeof define&&define.amd&&(t=window);const r={src:"data-src",srcset:"data-srcset",selector:".lazyload",root:null,rootMargin:"0px",threshold:0},s=function(){let t={},e=!1,r=0,o=arguments.length;"[object Boolean]"===Object.prototype.toString.call(arguments[0])&&(e=arguments[0],r++);for(;r<o;r++)!function(r){for(let o in r)Object.prototype.hasOwnProperty.call(r,o)&&(e&&"[object Object]"===Object.prototype.toString.call(r[o])?t[o]=s(!0,t[o],r[o]):t[o]=r[o])}(arguments[r]);return t};if(e.prototype={init:function(){if(!t.IntersectionObserver)return void this.loadImages();let e=this,r={root:this.settings.root,rootMargin:this.settings.rootMargin,threshold:[this.settings.threshold]};this.observer=new IntersectionObserver(function(t){Array.prototype.forEach.call(t,function(t){if(t.isIntersecting){e.observer.unobserve(t.target);let r=t.target.getAttribute(e.settings.src),s=t.target.getAttribute(e.settings.srcset);"img"===t.target.tagName.toLowerCase()?(r&&(t.target.src=r),s&&(t.target.srcset=s)):t.target.style.backgroundImage="url("+r+")"}})},r),Array.prototype.forEach.call(this.images,function(t){e.observer.observe(t)})},loadAndDestroy:function(){this.settings&&(this.loadImages(),this.destroy())},loadImages:function(){if(!this.settings)return;let t=this;Array.prototype.forEach.call(this.images,function(e){let r=e.getAttribute(t.settings.src),s=e.getAttribute(t.settings.srcset);"img"===e.tagName.toLowerCase()?(r&&(e.src=r),s&&(e.srcset=s)):e.style.backgroundImage="url('"+r+"')"})},destroy:function(){this.settings&&(this.observer.disconnect(),this.settings=null)}},t.lazyload=function(t,r){return new e(t,r)},t.jQuery){const r=t.jQuery;r.fn.lazyload=function(t){return t=t||{},t.attribute=t.attribute||"data-src",new e(r.makeArray(this),t),this}}return e});
+            var images = document.querySelectorAll('img[data-src]');
+            if(images.length) {
+              window.addEventListener('pageLazyLoad', function () {
+                lazyload(images)
+              })
+            }
+          });
+        </script>
+      <link rel="preload" href="https://static-media.hotmart.com/8FUA_nxDTMvEuGrlvbObmcfSPF4=/filters:quality(1):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" as="image">
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700&amp;display=swap">
+  <style>
+    .made-with-hotmart-pages {
+      width: 116px;
+      padding: 4px 8px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      z-index: 10;
+      border: 0px solid whitesmoke;
+      background: radial-gradient(
+        63.16% 63.16% at 50% 50%,
+        rgba(0, 0, 0, 0.75) 0%,
+        #000000 100%
+      );
+      border-top-left-radius: 10px;
+    }
+
+    .made-with-hotmart-pages__text {
+      color: white;
+      font-family: 'Lato';
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+    }
+  </style>
+</head>
+  <body><script type="text/javascript" async="true">
+(function(l,a,u,n,c,h,e,r){l["HotmartLauncherObject"]=c;l[c]=l[c]||
+function(){
+(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+})(window,document,"script","//launcher.hotmart.com/launcher.js","hot");
+hot("account","89c806c1-7ad0-324a-a058-981952167c1a");
+</script><script type="text/javascript">
+window.addEventListener('pageLazyLoad', (function () {
+  var deliveryUrl = 'https://qhx31sr78i.execute-api.us-east-1.amazonaws.com/prod/v1/92465dcc-b60b-42f7-9287-3688c248e93b/hits';
+  var accessCookie = 'hotmart_editor_analytics_access';
+  var pageId = '92465dcc-b60b-42f7-9287-3688c248e93b';
+
+  function getCookie(name) {
+    var value = '; ' + document.cookie;
+    var parts = value.split('; ' + name + '=');
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return ''
+  }
+
+  function setCookie(name, value) {
+    var date = new Date();
+    date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + "; " + expires + "; path=/";
+  }
+
+  var sendHit = function() {
+    'use strict';
+
+    window.hotmartKlickartAnalyticsDeliveryUrl = deliveryUrl;
+    window.hotmartKlickartAnalyticsSessionId = pageId
+      + '-'
+      + Math.random().toString(16).substr(2, 14)
+      + '-'
+      + Date.now().toString(16);
+
+    function checkDevice() {
+      var mobileRegex = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Tablet|iPad/i;
+      return mobileRegex.test(window.navigator.userAgent) ? 'mobile' : 'desktop'
+    }
+
+    var accesses = getCookie(accessCookie),
+      hasPreviousAccess = false;
+
+    if (accesses) {
+      accesses = JSON.parse(accesses);
+      hasPreviousAccess = accesses.indexOf(pageId) != -1;
+    }
+
+    if (!hasPreviousAccess) {
+      accesses = accesses || [];
+      accesses.push(pageId);
+      setCookie(accessCookie, JSON.stringify(accesses));
+    }
+
+    var dataObject = {
+      'previousAccess': hasPreviousAccess,
+      'device': checkDevice(),
+      'sessionId': window.hotmartKlickartAnalyticsSessionId,
+    };
+    navigator.sendBeacon(deliveryUrl, JSON.stringify(dataObject));
+  };
+
+  var sendTimeElapsed = function() {
+    var timeElapsed = window.performance.now()/1000,
+        dataObject = {
+      'timeElapsed': timeElapsed,
+      'sessionId': window.hotmartKlickartAnalyticsSessionId,
+      'clickIdentifier': window.hotmartKlickartAnalyticsClickIdentifier,
+    };
+
+    if (window.hotmartKlickartAnalyticsSubscriptionEmail) {
+      dataObject['subscriptionEmail'] = window.hotmartKlickartAnalyticsSubscriptionEmail;
+    }
+
+    navigator.sendBeacon(deliveryUrl, JSON.stringify(dataObject));
+  };
+
+  sendHit();
+  window.addEventListener('pagehide', sendTimeElapsed);
+}));
+</script>
+
+<div id="ls-09b3c1cf-f07a-4fef-9466-a9bc0f3b1a72" class="ls-page ls-page-ls-09b3c1cf-f07a-4fef-9466-a9bc0f3b1a72" data-children=""><section id="ls-cfd5ed4f-10a8-44a8-817a-7eb62f061abc" class="ls-section ls-section-ls-cfd5ed4f-10a8-44a8-817a-7eb62f061abc" data-children="" data-ls-section="{&quot;uid&quot;:&quot;ls-cfd5ed4f-10a8-44a8-817a-7eb62f061abc&quot;,&quot;delayType&quot;:&quot;disabled&quot;,&quot;endDate&quot;:&quot;2024-09-13T14:17:44&quot;,&quot;timeOnPage&quot;:&quot;5&quot;,&quot;timeOnPageUnit&quot;:&quot;seconds&quot;,&quot;timezone&quot;:&quot;-03:00_utcMinus0300MainCities&quot;,&quot;localStorageEndDate&quot;:&quot;&quot;,&quot;hideDelayedClass&quot;:&quot;hide-delayed&quot;}"><div id="ls-16d9da20-5f3d-4df8-8855-a7ac980bc6c9" class="ls-row ls-row-ls-16d9da20-5f3d-4df8-8855-a7ac980bc6c9" data-children=""><div id="ls-86153985-8429-479b-986f-797e0955dffa" class="ls-column ls-column-ls-86153985-8429-479b-986f-797e0955dffa" data-children=""><div id="ls-3244ac05-ecec-4d59-af95-85ec147d2dc7" class="ls-group-host ls-group-host-ls-3244ac05-ecec-4d59-af95-85ec147d2dc7"> <div class="ls-group ls-group-ls-3244ac05-ecec-4d59-af95-85ec147d2dc7" data-children=""> <span id="ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc" class="ls-image-host ls-image-host-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc"> <span class="ls-image ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc_imgdesktop"> <img src="https://static-media.hotmart.com/8FUA_nxDTMvEuGrlvbObmcfSPF4=/filters:quality(1):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" data-src="https://static-media.hotmart.com/hMC8YOvCHTWCczg2AoUc9P_H0lc=/filters:quality(100):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" alt="" class="lazyload ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimg" width="1200" height="133"> </span> <span class="ls-image ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgtablet"> <img src="https://static-media.hotmart.com/8FUA_nxDTMvEuGrlvbObmcfSPF4=/filters:quality(1):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" data-src="https://static-media.hotmart.com/hMC8YOvCHTWCczg2AoUc9P_H0lc=/filters:quality(100):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" alt="" class="lazyload ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimg" width="1200" height="133"> </span> <span class="ls-image ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dcc ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimgmobile"> <img src="https://static-media.hotmart.com/8FUA_nxDTMvEuGrlvbObmcfSPF4=/filters:quality(1):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" data-src="https://static-media.hotmart.com/hMC8YOvCHTWCczg2AoUc9P_H0lc=/filters:quality(100):format(webp)/klickart-prod/uploads/media/file/8405910/flag_bn2.png" alt="" class="lazyload ls-image-ls-79ea6be1-d043-4a77-b1c1-3c2653d97dccimg" width="334" height="79"> </span> </span><span id="ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f" class="ls-text-host ls-text-host-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f"> <span class="ls-text ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fdesktop"> <h1><strong style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">Baixe agora nosso aplicativo LIPESET e tenha acesso a todas as funcionalidades!</strong></h1> </span> <span class="ls-text ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3ftablet"> <h1><strong style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">Baixe agora nosso aplicativo LIPESET e tenha acesso a todas as funcionalidades!</strong></h1> </span> <span class="ls-text ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3f ls-text-ls-20839602-ab4e-4ec1-ac23-7b8f0aaf0c3fmobile"> <h1><strong style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">Baixe agora nosso aplicativo LIPESET e tenha acesso a todas as funcionalidades!</strong></h1> </span> </span><div class="ls-klicksend-form-host ls-klicksend-form-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89"> <form klicksend-form-id="J2uQrdl" method="post" action="https://handler.send.hotmart.com/subscription/J2uQrdl" class="ls-klicksend-form ls-klicksend-form-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89" id="J2uQrdl"> <div id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email" class="ls-input-host ls-input-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email"> <div class="ls-input ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email"> <label class="ls-inputcontainer ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput-container" for="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email-input"> <input id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-email-input" class="ls-inputinput ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-emailinput" name="email" type="email" value="" placeholder="Email" required=""> </label> </div> </div><div id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name" class="ls-input-host ls-input-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name"> <div class="ls-input ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name"> <label class="ls-inputcontainer ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput-container" for="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name-input"> <input id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_name-input" class="ls-inputinput ls-input-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-inputs-first_nameinput" name="first_name" type="text" value="" placeholder="Primeiro nome"> </label> </div> </div> <span id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text" class="ls-text-host ls-text-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text"> <span class="ls-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textdesktop"> <p style="line-height:1"><span style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">Entre com seu melhor email</span></p> </span> <span class="ls-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-texttablet"> <p style="line-height:1"><span style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">Entre com seu melhor email</span></p> </span> <span class="ls-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-textmobile"> <p style="line-height:1"><span style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">Entre com seu melhor email</span></p> </span> </span> <span id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link" class="ls-text-host ls-text-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link"> <span class="ls-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkdesktop"> <p style="line-height:1"><strong style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">100% livre de spam</strong></p> </span> <span class="ls-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linktablet"> <p style="line-height:1"><strong style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">100% livre de spam</strong></p> </span> <span class="ls-text ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-link ls-text-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-text-linkmobile"> <p style="line-height:1"><strong style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, sans-serif">100% livre de spam</strong></p> </span> </span> <div aria-hidden="true" style="position: absolute; left: -5000px;"> <input type="text" name="b_J2uQrdl" tabindex="-1" autocomplete="nope"> </div> <div id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox" class="ls-checkbox-host ls-checkbox-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox"> <label class="ls-checkbox ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox" htmlfor="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-checkbox"> <input type="checkbox" id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-checkbox" name="gdpr" value="Concordo em receber os e-mails" class="ls-checkboxinput ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckbox" required=""> <div class="ls-checkbox-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkboxcheckboxbox"> <div id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon" class="ls-icon-host ls-icon-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon"> <div class="ls-icon ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon desktop"> <i class="fas fa-check"></i> </div> <div class="ls-icon ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon tablet"> <i class="fas fa-check"></i> </div> <div class="ls-icon ls-icon-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-checkbox-icon mobile"> <i class="fas fa-check"></i> </div> </div> </div> Concordo em receber os e-mails </label> </div> <div id="ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button" class="ls-button-host ls-button-host-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button"> <button class="ls-button ls-button-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button" data-ls-button="{&quot;uid&quot;:&quot;ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button&quot;,&quot;delayType&quot;:&quot;disabled&quot;,&quot;endDate&quot;:&quot;2024-09-13T14:17:44&quot;,&quot;timeOnPage&quot;:&quot;5&quot;,&quot;timeOnPageUnit&quot;:&quot;seconds&quot;,&quot;timezone&quot;:&quot;-03:00_utcMinus0300MainCities&quot;,&quot;action&quot;:&quot;link&quot;,&quot;popupId&quot;:&quot;&quot;,&quot;localStorageEndDate&quot;:&quot;&quot;,&quot;hideDelayedClass&quot;:&quot;hide-delayed&quot;}"> <span class="ls-buttonlabel ls-button-ls-ca5f8ef7-75b1-43ec-93c0-4c3506f7ee89-button_label">Enviar</span> </button> </div> </form> </div></div></div></div></div></section></div><script type="text/javascript" async="true">
+function replaceQueryStringParam(queryStringValues, element) {
+  var outerHTML = element.outerHTML;
+
+  queryStringValues.forEach((item) => {
+    var param = "{:" + item.key + "}";
+    if (outerHTML.includes(param)) {
+      var regExp = new RegExp(param, "g");
+      outerHTML = outerHTML.replace(regExp, item.value);
+    }
+  });
+
+  if (outerHTML !== element.outerHTML) {
+    element.outerHTML = outerHTML;
+  }
+}
+
+var urlSearchParams = new URLSearchParams(window.location.search);
+var queryStringElements = document.body.querySelectorAll("*");
+var queryStringValues = [];
+
+urlSearchParams.forEach(function (value, key) {
+  queryStringValues.push({ key, value });
+});
+queryStringElements.forEach(function (element) {
+  replaceQueryStringParam(queryStringValues, element);
+});
+</script><script type="text/javascript">
+window.addEventListener('pageLazyLoad', (function () {
+  var hotmartKlickartPublicAnalyticsClickCounter = (function () {
+    var _public = {},
+        _private = {};
+
+    window.hotmartKlickartAnalyticsClickIdentifier = null;
+
+    _private.CONVERSION_COUNT_ATTR = 'klickart-analytics-count-conversion';
+    _private.MAX_REQUESTS_RETRY = 5;
+    _private.retries = 0;
+
+    _private.hasRequestConfig = function () {
+      return window.hotmartKlickartAnalyticsDeliveryUrl
+        && window.hotmartKlickartAnalyticsSessionId;
+    };
+
+    _private.retryRequest = function () {
+      if (_private.retries >= _private.MAX_REQUESTS_RETRY) {
+        return;
+      }
+
+      setTimeout(_private.sendClicks, 500);
+      _private.retries += 1;
+    };
+
+    _private.clearClick = function () {
+      window.hotmartKlickartAnalyticsClickIdentifier = null;
+    };
+
+    _private.sendClicks = function () {
+      if (!_private.hasRequestConfig()) {
+        _private.retryRequest();
+        return;
+      }
+
+      var client = new XMLHttpRequest(),
+          timeElapsed = window.performance.now()/1000;
+      client.onload = _private.clearClick;
+      client.open('POST', window.hotmartKlickartAnalyticsDeliveryUrl, false);
+
+      try {
+        client.send(JSON.stringify({
+          'clickIdentifier': window.hotmartKlickartAnalyticsClickIdentifier,
+          'sessionId': window.hotmartKlickartAnalyticsSessionId,
+          'timeElapsed': timeElapsed,
+        }));
+      } catch (error) {
+        console.error('failed to publish click in analytics');
+      }
+    };
+
+    _private.incrementClick = function () {
+      _private.retries = 0;
+
+      var identifier = this.getAttribute(_private.CONVERSION_COUNT_ATTR);
+
+      window.hotmartKlickartAnalyticsClickIdentifier = identifier;
+      _private.sendClicks();
+    };
+
+    _public.init = function () {
+      var linksToCountList = document.querySelectorAll('[' + _private.CONVERSION_COUNT_ATTR + ']');
+      var linksToCount = Array.from(linksToCountList);
+
+      linksToCount.forEach(function (linkToCount) {
+        linkToCount.addEventListener('click', _private.incrementClick);
+      });
+    };
+
+    return _public;
+
+  }(window));
+
+  hotmartKlickartPublicAnalyticsClickCounter.init();
+}));
+</script><script type="text/javascript">
+window.addEventListener('pageLazyLoad', (function () {
+  var hotmartKlickartPublicAnalyticsSubscription = (function () {
+    var _public = {},
+        _private = {};
+
+    _private.MAX_REQUESTS_RETRY = 5;
+    _private.retries = 0;
+
+    _private.hasRequestConfig = function () {
+      return window.hotmartKlickartAnalyticsDeliveryUrl
+      && window.hotmartKlickartAnalyticsSessionId;
+    };
+
+    _private.retryRequest = function () {
+      if (_private.retries >= _private.MAX_REQUESTS_RETRY) {
+        return;
+      }
+
+      setTimeout(_private.sendSubscriptionEmail, 500);
+      _private.retries += 1;
+    };
+
+    _private.clearSubscription = function () {
+      window.hotmartKlickartAnalyticsSubscriptionEmail = null;
+    };
+
+    _private.sendSubscriptionEmail = function () {
+      if (!_private.hasRequestConfig()) {
+        _private.retryRequest();
+        return;
+      }
+
+      var client = new XMLHttpRequest(),
+          timeElapsed = window.performance.now()/1000;
+      client.onload = _private.clearSubscription;
+      client.open('POST', window.hotmartKlickartAnalyticsDeliveryUrl, false);
+
+      try {
+        client.send(JSON.stringify({
+          'subscriptionEmail': window.hotmartKlickartAnalyticsSubscriptionEmail || null,
+          'sessionId': window.hotmartKlickartAnalyticsSessionId,
+          'timeElapsed': timeElapsed,
+        }));
+      } catch (error) {
+        console.error('failed to publish subscription in analytics');
+      }
+    };
+
+    _public.init = function () {
+      var forms = document.querySelectorAll('form');
+      var formsArray = Array.from(forms);
+      var emailRegex = /(email_d+|email|inf_field_Email|cmp1|kmbSubscribe[email]|mauticform[email])/ig;
+
+      formsArray.forEach(function (form) {
+        form.addEventListener('submit', function () {
+          _private.retries = 0;
+          var inputs = form.querySelectorAll('input');
+          var inputsArray = Array.from(inputs);
+
+          var emailField = inputsArray.filter(function (input) {
+            return input.name.match(emailRegex);
+          });
+
+          if (emailField.length > 0) {
+            window.hotmartKlickartAnalyticsSubscriptionEmail = emailField[0].value;
+            _private.sendSubscriptionEmail();
+          }
+        });
+      });
+    };
+
+    return _public;
+
+  }(window));
+
+  hotmartKlickartPublicAnalyticsSubscription.init();
+}));
+</script><script async="">var LsButton = (()=>{const e="timerStartDate",t=({uid:t,timeOnPage:n,timeOnPageUnit:r,endDate:i,delayType:s,timezone:o,buttonElement:a,localStorageEndDate:l,hideDelayedClass:c})=>{let u,h,d={startTime:null,timePassed:0};const p=()=>{const e="minutes"===r?60*+n:+n;return d.startTime+1e3*e},f=()=>("timeOnPage"===s?l?+l:p():new Date(${i}${o.split("_")[0]}).getTime())-(d.startTime+d.timePassed)<=0;return u=()=>{(()=>{if(f())return a.classList.remove(c),void window.removeEventListener("timerTick",u);d=Object.assign(Object.assign({},d),{timePassed:d.timePassed+=1e3})})()},h=n=>{d={timePassed:0,startTime:n.detail},"timeOnPage"!==s||l||localStorage.setItem(t,p().toString()),window.removeEventListener(e,h)},{handleTickListener:u,handleStartDateListener:h}};document.querySelectorAll("[data-ls-button]").forEach((n=>{const r=JSON.parse(n.dataset.lsButton);if("popup-on-click"===r.action&&n.addEventListener("click",(()=>{window.dispatchEvent(new CustomEvent(openPopup-${r.popupId}))})),["close-exit-popup","close-popup"].includes(r.action)&&n.parentElement.addEventListener("click",(()=>{window.dispatchEvent(new CustomEvent(closePopup-${r.popupId}))})),"disabled"===r.delayType)return;const{handleStartDateListener:i,handleTickListener:s}=t(Object.assign(Object.assign({},r),{buttonElement:n,localStorageEndDate:localStorage.getItem(r.uid)}));window.addEventListener(e,i),window.addEventListener("timerTick",s)}))})(); var LsIcon = (()=>{[{id:"fontawesome-cdn",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"},{id:"fontawesome-solid-cdn",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"},{id:"fontawesome-regular-cdn",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css"},{id:"fontawesome-brands-cdn",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"}].forEach((({id:e,href:t})=>{if(!document.head.querySelector(#${e})){const n=document.createElement("link"),r=document.createElement("link");n.setAttribute("rel","preload"),n.setAttribute("as","style"),n.setAttribute("href",t),r.setAttribute("id",e),r.setAttribute("href",t),r.setAttribute("rel","stylesheet"),document.head.append(n),document.head.append(r)}}))})(); var LsSection = (()=>{const e="timerStartDate",t=({uid:t,timeOnPage:n,timeOnPageUnit:r,endDate:i,delayType:s,timezone:o,sectionElement:a,localStorageEndDate:l,hideDelayedClass:c})=>{let u,h,d={startTime:null,timePassed:0};const p=()=>{const e="minutes"===r?60+n:+n;return d.startTime+1e3*e},f=()=>("timeOnPage"===s?l?+l:p():new Date(${i}${o.split("_")[0]}).getTime())-(d.startTime+d.timePassed)<=0;return u=()=>{(()=>{if(f())return a.classList.remove(c),void window.removeEventListener("timerTick",u);d=Object.assign(Object.assign({},d),{timePassed:d.timePassed+=1e3})})()},h=n=>{d={timePassed:0,startTime:n.detail},"timeOnPage"!==s||l||localStorage.setItem(t,p().toString()),window.removeEventListener(e,h)},{handleTickListener:u,handleStartDateListener:h}};document.querySelectorAll("*[data-ls-section]").forEach((n=>{const r=JSON.parse(n.dataset.lsSection);if("disabled"===r.delayType)return;const{handleStartDateListener:i,handleTickListener:s}=t(Object.assign(Object.assign({},r),{sectionElement:n,localStorageEndDate:localStorage.getItem(r.uid)}));window.addEventListener(e,i),window.addEventListener("timerTick",s)}))})(); var LsPage = (()=>{(()=>{let e;window.dispatchEvent(new Event("pageLoaded"));const t=()=>{var n;clearTimeout(e),n=t,window.removeEventListener("mousemove",n),window.removeEventListener("keydown",n),window.removeEventListener("touchstart",n),window.removeEventListener("click",n),window.dispatchEvent(new Event("pageLazyLoad"))};var n;n=t,window.addEventListener("mousemove",n),window.addEventListener("keydown",n),window.addEventListener("touchstart",n),window.addEventListener("click",n),e=setTimeout((()=>{t()}),3e3)})()})()</script>
